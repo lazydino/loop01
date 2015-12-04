@@ -36,7 +36,7 @@ build:
           echo "npm version $(npm -v) running"
 deploy:
   steps:
-    - scripts:
+    - script:
        name: push to dokku
        code: |
          git remote add dokku dokku@apps.magnetar.net:loop01
