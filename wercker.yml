@@ -46,6 +46,6 @@ deploy:
        name: push to dokku
        code: |
          git remote add dokku dokku@apps.magnetar.net:loop01
-         git push dokku master
+         git push dokku HEAD:master -f
 
     
