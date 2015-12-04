@@ -40,7 +40,7 @@ deploy:
         hostname: apps.magnetar.net
 
     - add-ssh-key:
-        keyname: my_dokku
+        keyname: MY_DOKKU_KEY
 
     - script:
        name: push to dokku
