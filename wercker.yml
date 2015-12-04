@@ -34,5 +34,12 @@ build:
         code: |
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
+deploy:
+  steps:
+    - scripts:
+       name: push to dokku
+       code: |
+         git remote add dokku dokku@apps.magnetar.net:loop01
+         git push dokku master
 
     
