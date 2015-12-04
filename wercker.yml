@@ -37,10 +37,10 @@ build:
 deploy:
   steps:
     - add-to-known_hosts:
-        hostname: "apps.magnetar.net"
+        hostname: apps.magnetar.net
 
     - add-ssh-key:
-        keyname: DOKKUSSH
+        keyname: my_dokku
 
     - script:
        name: push to dokku
