@@ -41,17 +41,18 @@ deploy:
 
     - add-ssh-key:
         keyname: MY_DOKKU_KEY
+        host: apps.magnetar.net
 
     - script:
        name: push to dokku
        code: |
-         rm -rf .git
-         git init
-         git config --global user.name "wercker"
-         git config --global user.email "pleasemailus@wercker.com"
-         git add .
-         git commit -m "Result of deploy $WERCKER_GIT_COMMIT"
+         #rm -rf .git
+         #git init
+         #git config --global user.name "wercker"
+         #git config --global user.email "pleasemailus@wercker.com"
+         #git add .
+         #git commit -m "Result of deploy $WERCKER_GIT_COMMIT"
          git remote add dokku dokku@apps.magnetar.net:loop01
-         #git push dokku HEAD:master -f
+         git push dokku HEAD:master -f
 
     
