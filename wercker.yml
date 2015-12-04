@@ -53,6 +53,6 @@ deploy:
          #git add .
          #git commit -m "Result of deploy $WERCKER_GIT_COMMIT"
          git remote add dokku dokku@apps.magnetar.net:loop01
-         git push dokku HEAD:master -f
+         git push dokku master
 
     
