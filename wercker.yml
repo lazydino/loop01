@@ -37,11 +37,10 @@ build:
 deploy:
   steps:
     - add-to-known_hosts:
-        hostname: apps.magnetar.net
+        hostname: $SERVER_HOSTNAME
 
     - add-ssh-key:
         keyname: MY_DOKKU_KEY
-        host: apps.magnetar.net
 
     - script:
        name: push to dokku
@@ -53,8 +52,8 @@ deploy:
          git add .
          git commit -m "Result of deploy $WERCKER_GIT_COMMIT"
          echo "Add dokku remote repository"
-         git remote add dokku dokku@apps.magnetar.net:loop01
+         git remote add dokku dokku@$SERVER_HOSTNAME:loop01
          echo "Push changes to dokku"
-         git push dokku HEAD:master -f
+         git push dokku master
 
     
