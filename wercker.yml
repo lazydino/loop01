@@ -25,6 +25,6 @@ deploy:
     - script:
         name: Push to dokku
         code: |
-          git push origin master
+          git push dokku master
 
     
