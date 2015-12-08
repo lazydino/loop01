@@ -17,14 +17,14 @@ deploy:
           git config --global user.name "reggie"
           git config --global user.email "reggie@magnetargames.com"
           git remote add dokku dokku@$SERVER_HOSTNAME:loop01
-#    - script:
-#        name: Add everything to the repository
-#        code: |
-#          git add .
-#          git commit -m "Result of deploy $WERCKER_GIT_COMMIT"
-#    - script:
-#        name: Push to dokku
-#        code: |
+    - script:
+        name: Add everything to the repository
+        code: |
+          git add .
+          git commit -m "Result of deploy $WERCKER_GIT_COMMIT"
+    - script:
+        name: Push to dokku
+        code: |
           git push dokku master
 
     
