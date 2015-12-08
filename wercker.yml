@@ -10,8 +10,8 @@ deploy:
     - add-ssh-key:
         keyname: MY_DOKKU_KEY
     - script:
-#        name: Initialize new repository
-#        code: |
+        name: Initialize new repository
+        code: |
 #          rm -rf .git
 #          git init
           git config --global user.name "reggie"
