@@ -14,7 +14,7 @@ deploy:
         code: |
           rm -rf .git
           git init
-          git config --global user.name "wercker"
+          git config --global user.name "reggie"
           git config --global user.email "reggie@magnetargames.com"
           git remote add dokku dokku@$SERVER_HOSTNAME:loop01
     - script:
