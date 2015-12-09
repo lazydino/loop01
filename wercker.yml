@@ -6,8 +6,7 @@ build:
 deploy:
   steps:
     - add-to-known_hosts:
-        hostname: apps.magnetar.net
-#        fingerprint: 16:be:98:e8:0b:7b:91:7b:c2:9e:40:fb:d7:1a:58:e3
+        hostname: 159.203.21.90
     - add-ssh-key:
         keyname: MY_DOKKU_KEY
     - script:
@@ -17,7 +16,7 @@ deploy:
           git init
           git config --global user.name "reggie"
           git config --global user.email "reggie@magnetargames.com"
-          git remote add dokku dokku@apps.magnetar.net:loop01
+          git remote add dokku dokku@159.203.21.90:loop01
     - script:
         name: Add everything to the repository
         code: |
