@@ -7,6 +7,7 @@ deploy:
   steps:
     - add-to-known_hosts:
         hostname: apps.magnetar.net
+        fingerprint: 16:be:98:e8:0b:7b:91:7b:c2:9e:40:fb:d7:1a:58:e3
     - add-ssh-key:
         keyname: MY_DOKKU_KEY
     - script:
