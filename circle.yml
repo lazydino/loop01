@@ -2,6 +2,7 @@ general:
   branches:
     only:
       - master # list of branches to build
+# development branch here
 test:
   override:
 deployment:  
