@@ -52,7 +52,7 @@ deploy:
          #git config --global user.email "pleasemailus@wercker.com"
          #git add .
          #git commit -m "Result of deploy $WERCKER_GIT_COMMIT"
-         git remote add dokku dokku@159.203.21.90:loop01
-         git push dokku HEAD:master -f
+         #git remote add dokku dokku@159.203.21.90:loop01
+         #git push dokku HEAD:master -f
 
     
