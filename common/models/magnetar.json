@@ -11,14 +11,17 @@
       "type": "string",
       "id": false
     },
-    "id": {
-      "type": "string"
+    "files": {
+      "type": [
+        "string"
+      ]
     },
     "icon": {
-      "type": "string"
+      "type": "buffer"
     },
-    "files": {
-      "type": "string"
+    "id": {
+      "type": "string",
+      "id": true
     }
   },
   "validations": [],

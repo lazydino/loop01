@@ -3,16 +3,16 @@
   "version": "0.0.0",
   "main": "server/server.js",
   "scripts": {
-  "start": "node .",    
+    "start": "node .",
     "pretest": "jshint .",
-	"test":"exit 0"
+    "test": "exit 0"
   },
   "dependencies": {
     "compression": "^1.0.3",
     "errorhandler": "^1.1.1",
     "loopback": "^2.5.0",
     "loopback-boot": "^2.2.0",
-    "loopback-connector-mysql": "^1.4.7",
+    "loopback-connector-mysql": "^1.7.0",
     "loopback-datasource-juggler": "^2.7.0",
     "serve-favicon": "^2.0.1"
   },
