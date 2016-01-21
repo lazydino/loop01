@@ -21,7 +21,7 @@
     },
     "id": {
       "type": "string",
-      "id": true
+      "id": false
     }
   },
   "validations": [],

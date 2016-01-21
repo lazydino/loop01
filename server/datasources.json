@@ -1,7 +1,12 @@
 {
   "db": {
+    "host": "myserver",
+    "port": 3306,
+    "database": "mydb",
+    "password": "password",
     "name": "db",
-    "connector": "mysql"
+    "connector": "mysql",
+    "user": "usr"
   },
   "mysqlDs": {
     "host": "demo.strongloop.com",
