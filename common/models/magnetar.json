@@ -19,7 +19,7 @@
     "icon": {
       "type": "buffer"
     },
-    "id": {
+    "sid": {
       "type": "string",
       "id": false
     }
