@@ -1,0 +1,28 @@
+{
+  "name": "Magnetar",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "id": false
+    },
+    "id": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "files": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
