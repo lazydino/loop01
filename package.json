@@ -4,8 +4,8 @@
   "main": "server/server.js",
   "scripts": {
     "start": "node .",
-    "pretest": "jshint .",
     "postinstall": "sh ./postinstall.sh",
+    "pretest": "jshint .",
     "test": "exit 0"
   },
   "dependencies": {
