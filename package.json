@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "main": "server/server.js",
   "scripts": {
-    "pretest": "jshint ."
+  "start": "node .",    
+    "pretest": "jshint .",
+	"test":"exit 0"
   },
   "dependencies": {
     "compression": "^1.0.3",
