@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node .",
     "pretest": "jshint .",
+    "postinstall": "sh ./postinstall.sh",
     "test": "exit 0"
   },
   "dependencies": {
