@@ -27,8 +27,10 @@
     "public": false
   },
   "CoffeeShop": {
-    "dataSource": "mysqlDs",
-    "public": true
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
   "Magnetar": {
     "dataSource": "mysqlDs",
