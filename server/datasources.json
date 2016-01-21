@@ -7,10 +7,9 @@
     "host": "demo.strongloop.com",
     "port": 3306,
     "database": "getting_started",
-    "username": "root",
+    "username": "demo",
     "password": "L00pBack",
     "name": "mysqlDs",
-    "connector": "mysql",
-    "user": "demo"
+    "connector": "mysql"
   }
 }
