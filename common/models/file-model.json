@@ -1,5 +1,5 @@
 {
-  "name": "Magnetar",
+  "name": "fileModel",
   "base": "PersistedModel",
   "strict": false,
   "idInjection": false,
@@ -7,21 +7,11 @@
     "validateUpsert": true
   },
   "properties": {
-    "name": {
-      "type": "string",
-      "id": false
+    "filename": {
+      "type": "string"
     },
-    "icon": {
+    "filebytes": {
       "type": "buffer"
-    },
-    "sid": {
-      "type": "string",
-      "id": false
-    },
-    "files": {
-      "type": [
-        "fileModel"
-      ]
     }
   },
   "validations": [],

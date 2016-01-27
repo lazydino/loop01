@@ -35,5 +35,11 @@
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "fileModel": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }

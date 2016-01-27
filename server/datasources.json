@@ -1,13 +1,14 @@
 {
   "db": {
-    "host": "myserver",
+    "host": "192.168.1.71",
     "port": 3306,
-    "database": "mydb",
+    "database": "matrixdb",
     "username": "root",
-    "password": "password",
+    "password": "Quest5775",
     "name": "db",
     "connector": "mysql",
-    "user": "usr"
+    "user": "usr",
+    "createDatabase": true
   },
   "mysqlDs": {
     "host": "demo.strongloop.com",
