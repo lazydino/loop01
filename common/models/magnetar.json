@@ -14,14 +14,29 @@
     "icon": {
       "type": "buffer"
     },
-    "sid": {
-      "type": "string",
-      "id": false
-    },
     "files": {
       "type": [
         "fileModel"
       ]
+    },
+    "type": {
+      "type": "number",
+      "id": false
+    },
+    "owner": {
+      "type": "number"
+    },
+    "guild": {
+      "type": "number"
+    },
+    "price": {
+      "type": "string"
+    },
+    "ispublic": {
+      "type": "boolean"
+    },
+    "subtype": {
+      "type": "number"
     }
   },
   "validations": [],
