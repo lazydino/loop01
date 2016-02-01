@@ -7,6 +7,16 @@ var app = module.exports = loopback();
 // Sub-apps like REST API are mounted via boot scripts.
 boot(app, __dirname);
 
+//var timeout = app.timeout // express v3 and below
+var timeout = require('connect-timeout'); //express v4
+
+app.use(timeout(120000));
+app.use(haltOnTimedout);
+
+function haltOnTimedout(req, res, next){
+  if (!req.timedout) next();
+}
+
 app.start = function() {
   // start the web server
   return app.listen(function() {

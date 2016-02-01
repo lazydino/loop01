@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "compression": "^1.0.3",
+    "connect-timeout": "^1.7.0",
     "errorhandler": "^1.1.1",
     "loopback": "^2.5.0",
     "loopback-boot": "^2.2.0",
