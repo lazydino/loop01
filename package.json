@@ -9,6 +9,7 @@
     "start": "node ."
   },
   "dependencies": {
+    "body-parser": "^1.14.2",
     "compression": "^1.0.3",
     "connect-timeout": "^1.7.0",
     "errorhandler": "^1.1.1",

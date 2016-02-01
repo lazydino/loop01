@@ -17,6 +17,10 @@ function haltOnTimedout(req, res, next){
   if (!req.timedout) next();
 }
 
+var bodyParser = require('body-parser');
+app.use(bodyParser.json({limit: '50mb'}));
+app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
+
 app.start = function() {
   // start the web server
   return app.listen(function() {
