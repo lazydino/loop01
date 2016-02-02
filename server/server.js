@@ -8,18 +8,18 @@ var app = module.exports = loopback();
 boot(app, __dirname);
 
 //var timeout = app.timeout // express v3 and below
-var timeout = require('connect-timeout'); //express v4
+//var timeout = require('connect-timeout'); //express v4
 
 //app.use(timeout(120000));
 //app.use(haltOnTimedout);
 
-function haltOnTimedout(req, res, next){
-  if (!req.timedout) next();
-}
+//function haltOnTimedout(req, res, next){
+//  if (!req.timedout) next();
+//}
 
-var bodyParser = require('body-parser');
-app.use(bodyParser.json({limit: '50mb'}));
-app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
+//var bodyParser = require('body-parser');
+//app.use(bodyParser.json({limit: '50mb'}));
+//app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 
 app.start = function() {
   // start the web server
