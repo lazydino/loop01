@@ -41,5 +41,17 @@
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "AssetStore": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Asset": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }
