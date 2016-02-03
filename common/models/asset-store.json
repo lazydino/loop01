@@ -12,7 +12,7 @@
       "id": false
     },
     "icon": {
-      "type": "string"
+      "type": "buffer"
     },
     "type": {
       "type": "number",
