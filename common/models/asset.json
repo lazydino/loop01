@@ -11,7 +11,7 @@
       "type": "string"
     },
     "bytes": {
-      "type": "buffer"
+      "type": "string"
     }
   },
   "validations": [],
